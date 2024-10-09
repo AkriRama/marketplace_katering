@@ -1,0 +1,648 @@
+.main {
+    height: 100vh;
+}
+
+.sidebar {
+    background: #605B5B;
+    color: #fff; 
+    min-height: 52vh;
+}
+
+.sidebar button {
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+}
+
+.sidebar button:hover {
+    background: #000;
+}
+
+.active {
+    background: #000;
+}
+
+.active2 {
+}
+
+        /*product*/
+        {box-sizing: border-box}
+        .mySlides {display: none}
+        .mySlides2 {display: none}
+        img {
+            vertical-align: middle; 
+            /* max-height: 300px; */
+            max-height: 100%;
+            max-width:100%;
+        }
+        
+        .img2 {
+            vertical-align: middle; 
+            max-height: 400px;
+            max-width:100%;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 100%;
+            /* max-height: 900px;    */
+            max-height: 100%;   
+            position: relative;
+            display: flex;
+            justify-content:center;
+            margin: 0 auto;
+            
+            flex-direction: column; 
+            align-items: center;
+            margin-top: 10px;
+            background: #072541;
+        }
+
+        /* tidak digunakan */
+        .slideshow-container2 {
+            max-width: 900px;
+            position: relative;
+            display: flex;
+            justify-content:center;
+            margin: 0 auto;
+        }
+ 
+        
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;  /* Ganti relative dengan absolute agar bisa ditempatkan di tengah secara vertikal */
+            padding: 8px 16px;  /* Padding sedikit disesuaikan agar proporsional */
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); /* Background hitam dengan transparansi */
+            font-weight: bold;
+            font-size: 16px;  /* Ukuran font sedikit dikurangi untuk estetika */
+            transition: 0.6s ease;
+            border: none; /* Menghilangkan border */
+            border-radius: 50px;  /* Membuat border berbentuk bulat untuk estetika */
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 20px;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .prev {
+            left: 20px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .dot2 {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active2, .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            opacity:0;
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+        }
+
+        .card-img-top {
+            max-width: auto; /*Contoh tinggi, sesuaikan sesuai kebutuhan Anda.*/
+            max-height: auto; /*Contoh tinggi, sesuaikan sesuai kebutuhan Anda.*/
+            
+        }
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            min-height: 52vh;
+        }
+
+        /*detailproduk*/
+        .card-lancip {
+            border-radius: 0;
+        }
+        
+        .card-custom {
+            border-radius: 10px 10px 0px 0px;
+        }
+        
+        .card-custom2 {
+            border-radius: 0px 0px 10px 0px;
+        }
+        
+        .card-custom3 {
+            background: #072541;
+            border-radius: 10px 0px 0px 0px;
+        }
+
+        .card-custom4 {
+            background: #072541;
+            border-radius: 0px 0px 10px 0px;
+        }
+        
+        .right{
+            float: right;
+            display: block;
+        }
+        
+        .no-border
+        {
+            border:0;
+            background: transparent;
+        }
+
+        .card-custom5 {
+            background-color: #072541;
+            height: 500px; 
+            width: 500px;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+        }
+        
+        /*card-image on product*/
+        .card-custom6 {
+            width: 100%; 
+            height: 100%;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+        }
+
+        button.btn-navy {
+            background-color: #072541;
+            -webkit-text-fill-color: white;
+            width: 100%; 
+            max-height: 100%;
+        }
+        
+        a.btn-navy {
+            background-color: #072541;
+            -webkit-text-fill-color: white;
+            width: 100%; 
+            max-height: 100%;
+        }
+        
+        .btn-navySmall {
+            /* !important */
+            background: #072541 ;
+            -webkit-text-fill-color: white;
+            max-height: 100%;
+        }
+        
+        .btn-secondary {
+            width: 100%; 
+            max-height: 100%;
+        }
+        
+        .btn-secondarySmall {
+            background-color: gray;
+            color: white;
+            max-height: 100%;
+        }
+        
+        .btn-secondarySmall:hover {
+            background-color: white;
+        }
+
+        .btn-navy:hover, .card-custom3:hover, .card-custom4:hover, .btn-navySmall:hover, .btn-navy:hover {
+            background-color: #173551;
+            color: black;
+        }
+
+        /*profile*/
+        .image-container {
+            width: col-sm-6;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+    
+        .image-container img{
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .navbar {
+            z-index: 1; 
+            position: relative;
+        }
+    
+        .main {
+            height: 100vh;
+        }
+    
+        .sidebar {
+            background: #605B5B;
+            color: #fff; 
+            height: 10px;
+        }
+    
+        .sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 20px 20px;
+        }
+    
+        .sidebar a:hover {
+            background: #000;
+        }
+    
+        .active {
+            background: #000;
+            border-right: solid 8px orange;
+        }
+
+    /* sidebar mainlayoutsadmin */
+    .sidebar {
+        background: black;
+        color: #fff; 
+        width: 4rem;
+        height: auto;
+        transition: all ease-in .3s;
+    }
+    
+    /* reverse hide -> show */
+    .sidebar.hide {
+        background: black;
+        color: #fff; 
+        width: 13rem;
+        transition: all ease-out .3s;
+    }
+
+    .sidebar .titleSide {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar .titleSide img {
+        height: 30px;
+        transition: all ease-out .9;
+    }
+
+    .sidebar.hide .titleSide {
+        height: 100px;
+    }
+    
+    .sidebar.hide .titleSide img {
+        height: 80px;
+        transition: all ease-in .9;
+    }
+    
+    .navbar {
+        height: 60px;
+    }
+
+    .sidebar.hide .description {
+        display: inline;
+    }
+    .sidebar .description {
+        display: none;
+    }
+
+    /* MenuChange */
+    #menu-button {
+        width: 32px;
+        /* background-color: #ff9900; */
+        position: absolute;
+        overflow: hidden;
+    }
+
+    #menu-label {
+        position: relative;
+        display: block;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    #menu-checkbox {
+        display: none;
+    }
+
+    #hamburger, #menu-label:after, #menu-label:before {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        /* background-color: #111827; */
+        background-color: #fff;
+    }
+    #menu-label:after, #menu-label:before {
+        content: "";
+        transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) left;
+    }
+
+    #menu-label:before {
+        top: 0;
+    }
+
+    #menu-label:after {
+        top: 8px;
+    }
+
+    #hamburger {
+        top: 16px;
+    }
+
+    #hamburger:before {
+        content: "MENU";
+        position: absolute;
+        top: 5px;
+        right: 0;
+        left: 0;
+        /* color: #111827; */
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #menu-checkbox:checked + #menu-label:before {
+        left: -39px;
+    }
+
+    #menu-checkbox:checked + #menu-label:after {
+        left: 39px;
+    }
+
+    #menu-checkbox:checked + #menu-label #hamburger:before {
+        animation: moveUpThenDown 0.8s ease 0.2s forwards,
+        shakeUp 0.8s ease 0.2s forwards,
+        shakeDown 0.2s ease 0.8s forwards
+    }
+
+    @keyframes moveUpThenDown {
+        0% {
+            top: 0;
+        }
+
+        50% {
+            top: -27px;
+        }
+
+        100% {
+            top: -14px;
+        }
+    }
+
+    @keyframes shakeUp {
+        0% {
+            transform: rotateZ(0);
+        }
+
+        25% {
+            transform: rotateZ(-10deg);
+        }
+
+        50% {
+            transform: rotateZ(0);
+        }
+
+        75% {
+            transform: rotateZ(10deg);
+        }
+
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+
+    @keyframes shakedown {
+        0% {
+            transform: rotateZ(0);
+        }
+
+        80% {
+            transform: rotateZ(3deg);
+        }
+
+        90% {
+            transform: rotateZ(-3deg);
+        }
+
+        100% {
+            transform: rotateZ(0);
+        }
+    }
+
+    .profile-bar {
+        height: 60px;
+    }
+
+    .profile-bar img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .sidebar.hide .profile-bar {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sidebar.hide .profile-bar .description {
+        
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+
+    .sidebar.hide .profile-bar img {
+        height: 120px;
+        width: 120px;
+    }
+
+    /* pagination */
+
+    .pagination .active-paginator .page-link {
+        background-color: #111827;
+        color: white;
+    }
+    
+    .pagination .page-link {        
+        color: black;
+    }
+
+    /* modal */
+
+    .modal-backdrop {
+        opacity: 0.5 !important;
+    }
+
+    /* maintemplate */
+    
+
+    /* footer */
+    footer {
+        background: #173551;
+        color: white;
+        text-align: center;
+    }
+    
+    .title {
+        margin: 40px 40px 0;
+    }
+
+    /* UI User  */
+    .sidebarUser {
+        background-color: white;
+        color: #fff; 
+        height: auto;
+        transition: all ease-in .3s;
+    }
+
+    
+    .sidebarUser .bar {
+        transform: translateY(12%); /* Geser elemen ke tengah vertikal */
+        /* ... sisa properti ... */
+    }
+
+    /* .sidebarUser a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 20px 20px;
+    }
+
+    .sidebarUser a:hover {
+        background: #000;
+    } */
+
+    .sidebarUser button {
+        /* background: #072541; */
+        background: #fff;
+        color: #000;
+        text-decoration: none;
+        display: block;
+        padding: 20px 20px;
+    }
+    
+    .sidebarUser button:hover {
+        /* background: #000; */
+        background: #808080;
+        color: #fff;
+        border-radius: 0;
+    }
+
+    .sidebarUser label {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .sideBar select{
+        /* border: 1px solid;  */
+        border: 0; 
+        border-radius: 4px; 
+        color: #072541;
+        padding: 10px; 
+        font-weight: bold; 
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+
+    .btn-red {
+        background-color: #ff0000;
+        color: #fff;
+    }
+    
+    .btn-darkRed {
+        background-color: #8B0000;
+        color: #fff;
+    }
+    
+    .btn-darkRed:hover, .btn-red:hover {
+        background-color: #d10000;
+        /* background-color: #dc143c; */
+        color: #fff;
+    }
+    
+    .btn-maroon {
+        background-color: #800000;
+        color: #fff;
+    }
+
+    .table a {
+        text-decoration: none;
+    }
+
+    .sidebarUser button.active{
+        background: #000;
+        color: #fff;
+    }
